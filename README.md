@@ -13,5 +13,5 @@ Tech Stack
 - Netlify CLI
 - GitHub
 
-![Website](pokedex.netlify.app)
+![Website](pokedexog.netlify.app)
 
