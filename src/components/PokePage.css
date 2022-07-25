@@ -1,0 +1,109 @@
+.page_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 100%;
+  min-height: 96vh;
+  padding: 50px;
+  border-radius: 16px;
+  color: rgb(68, 68, 68);
+  background-color: rgb(234, 234, 234);
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+.card_header,
+.lower_header {
+  width: 100%;
+}
+
+header .card_header .title {
+  text-transform: capitalize;
+}
+
+header .card_header .image {
+  width: 100%;
+  height: auto;
+}
+
+header .card_header .type {
+  font-size: 2rem;
+  text-align: center;
+}
+
+header .card_header .type .type_item {
+  display: inline;
+  background-color: rgb(249, 249, 249);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+header .lower_header {
+  padding-top: 50px;
+}
+
+header .lower_header .title {
+  margin: 10px 0;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+header .lower_header .body_specs, 
+header .lower_header .ability_specs, 
+header .lower_header .stats_specs{
+    background-color:rgb(249, 249, 249) ;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+header .lower_header .body_specs p, 
+header .lower_header .ability_specs p{
+  display: inline;
+  background-color: rgb(234, 234, 234);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+  font-size: 1rem;
+} 
+
+header .lower_header .stats_specs p{
+  background-color: rgb(234, 234, 234);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+
+
+.home {
+  width: 70px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .page_header {
+    flex-direction: column;
+  }
+  .home {
+    width: 50px;
+  }
+  .home {
+    top: 40px;
+    right: 40px;
+  }
+  header .lower_header .subtitle,
+  header .lower_header .location {
+    font-size: 16px;
+  }
+}
